@@ -186,6 +186,7 @@ class PetViewsTest(APITestCase):
         self.assertEqual(trait2.id, response.json()["traits"][1]["id"], message)
 
     def test_can_not_create_pet_when_missing_keys(self):
+
         response = self.client.post(
             self.BASE_URL,
             {},
