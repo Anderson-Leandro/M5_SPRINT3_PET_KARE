@@ -1,8 +1,8 @@
-from django.shortcuts import render, get_object_or_404
+from django.shortcuts import get_object_or_404
 from rest_framework.views import APIView, Request, Response, status
 from rest_framework.pagination import PageNumberPagination
 
-from .serializers import PetSerializer, GroupSerializer, TraitSerializer
+from .serializers import PetSerializer
 
 from .models import Pet
 from groups.models import Group
